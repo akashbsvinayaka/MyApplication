@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="@dimen/item_margin"
+        android:background="@drawable/product_bg">
+
+    <ImageView
+            android:id="@+id/wishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_wishlist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_share"
+            app:layout_constraintEnd_toStartOf="@+id/wishlist"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/assured"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assured"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/share"
+            app:layout_constraintBottom_toBottomOf="@+id/share"/>
+
+    <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/shoe"
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/wishlist" android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    <TextView
+            android:id="@+id/offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/customOffer"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/customProductType"
+            app:layout_constraintTop_toBottomOf="@+id/offer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/customProductTitle"
+            app:layout_constraintTop_toBottomOf="@+id/type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <TextView
+            android:id="@+id/cutprice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/customViewAll"
+            android:background="@null"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/textColor"
+            android:padding="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+    <TextView
+            android:id="@+id/discount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/customViewAll"
+            android:background="@color/discountColor"
+            android:padding="2dp"
+            android:textColor="@color/priceColor"
+            app:layout_constraintStart_toEndOf="@+id/cutprice"
+            app:layout_constraintTop_toTopOf="@+id/cutprice"
+            app:layout_constraintBottom_toBottomOf="@+id/cutprice"/>
+
+    <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/customProductPrice"
+            app:layout_constraintTop_toBottomOf="@+id/cutprice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/addCart"
+            android:layout_marginEnd="8dp"/>
+
+    <ImageView
+            android:id="@+id/addCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_add_cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/price"
+            app:layout_constraintTop_toTopOf="@+id/price"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

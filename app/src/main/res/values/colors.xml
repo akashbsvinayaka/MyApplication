@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0471A8</color>
+    <color name="colorPrimaryDark">#0471A8</color>
+    <color name="colorAccent">#047FBE</color>
+
+    <color name="textColor">#505050</color>
+    <color name="viewAllColor">#A8A8A8</color>
+    <color name="productBorder">#D5D5D5</color>
+    <color name="priceColor">#0CA212</color>
+    <color name="discountColor">#3471F071</color>
+</resources>
